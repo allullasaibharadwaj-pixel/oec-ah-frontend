@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | ShopEase</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="products" data-protected="" data-nav="">
+<div id="site-header"></div>
+<main class="container page">
+
+<div class="toolbar"><div><h1 id="pageTitle">All Products</h1><span class="count" id="resultCount"></span></div></div>
+<div class="shop-layout">
+  <aside class="filters">
+    <h3>Filters</h3>
+    <div class="filter-group"><label for="fSearch">Search</label><input id="fSearch" type="search" placeholder="Name, brand, category..."></div>
+    <div class="filter-group"><label for="fCategory">Category</label><select id="fCategory"><option value="">All categories</option></select></div>
+    <div class="filter-group"><label>Price range</label><div class="price-row"><input id="fMin" type="number" min="0" placeholder="Min"><input id="fMax" type="number" min="0" placeholder="Max"></div></div>
+    <div class="filter-group"><label for="fSort">Sort by</label>
+      <select id="fSort">
+        <option value="newest">Newest</option>
+        <option value="price_asc">Price: Low to High</option>
+        <option value="price_desc">Price: High to Low</option>
+        <option value="rating">Rating</option>
+        <option value="popular">Best selling</option>
+      </select></div>
+    <button class="btn btn-block" id="applyBtn">Apply Filters</button>
+    <button class="btn btn-ghost btn-block" id="resetBtn" style="margin-top:8px">Reset</button>
+  </aside>
+  <div id="productList"></div>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<div id="toast-container"></div>
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>

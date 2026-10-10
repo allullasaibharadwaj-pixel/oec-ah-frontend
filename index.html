@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | ShopEase</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home" data-protected="" data-nav="">
+<div id="site-header"></div>
+<main class="container page">
+
+<section class="hero">
+  <div>
+    <h1>Shop smarter, <em>live better.</em></h1>
+    <p>Discover great deals on electronics, fashion, home essentials, beauty, books and more – delivered to your door.</p>
+    <div class="hero-actions">
+      <a class="btn btn-accent" href="products.html">Shop Now →</a>
+      <a class="btn btn-light" href="products.html?sort=popular">Best Sellers</a>
+    </div>
+  </div>
+  <div class="hero-art">🛍️</div>
+</section>
+<div class="features-strip">
+  <div class="feature"><span class="ico">🚚</span><div><b>Free Delivery</b><small id="freeDel">On orders over $100</small></div></div>
+  <div class="feature"><span class="ico">🔒</span><div><b>Secure Checkout</b><small>JWT-protected accounts</small></div></div>
+  <div class="feature"><span class="ico">↩️</span><div><b>Easy Cancellation</b><small>Cancel before it ships</small></div></div>
+  <div class="feature"><span class="ico">💬</span><div><b>24/7 Support</b><small>We are here to help</small></div></div>
+</div>
+<section class="section"><div class="section-head"><h2>Shop by Category</h2><a href="products.html">All products →</a></div><div class="category-grid" id="categories"></div></section>
+<section class="section"><div class="section-head"><h2>⭐ Featured Products</h2><a href="products.html?sort=rating">View all →</a></div><div id="featured"></div></section>
+<section class="section"><div class="promo"><div><h2>Weekend Mega Sale</h2><p>Save up to 30% on top picks across electronics, beauty, fashion and more.</p></div><a class="btn btn-light" href="products.html?sort=rating">Grab the deals</a></div></section>
+<section class="section"><div class="section-head"><h2>🔥 Best Selling</h2><a href="products.html?sort=popular">View all →</a></div><div id="bestsellers"></div></section>
+<section class="section"><div class="section-head"><h2>🆕 New Arrivals</h2><a href="products.html?sort=newest">View all →</a></div><div id="newarrivals"></div></section>
+
+</main>
+<div id="site-footer"></div>
+<div id="toast-container"></div>
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
